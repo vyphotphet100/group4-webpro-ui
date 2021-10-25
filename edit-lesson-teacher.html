@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual learning | Class detail</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Virtual learning | Edit lesson</title>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -14,11 +13,9 @@
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/util.css">
 	<link rel="stylesheet" type="text/css" href="styles/main_1.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/styles-merged.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
@@ -47,7 +44,7 @@
                                         </li>
                                     </ul>
                                     <div class="top_bar_login ml-auto">
-                                        <div class="login_button"><a href="login.html" class="Login">Login</a></div>
+                                        <div class="login_button"><a href="#" class="Login">Login</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -69,15 +66,15 @@
 						    	</div>
 						    	<nav class="main_nav_contaner ml-auto">
 							    	<ul class="main_nav">
-							    		<li><a href="index.html">Home</a></li>
-								    	<li><a href="MyClass.html">My classes</a></li>
-									    <li><a href="contact.html">Contact</a></li>
+							    		<li><a href="#">Home</a></li>
+								    	<li><a href="#">My classes</a></li>
+									    <li><a href="#">Contact</a></li>
 								    </ul>
 								    <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
 							    	<!-- Hamburger -->
 
-								    <div class="shopping_cart"><i><a href="profile.html" class="fa fa-user-circle-o"></a></i></div>
+								    <div class="shopping_cart"><i><a href="#" class="fa fa-user-circle-o"></a></i></div>
 								    <div class="hamburger menu_mm">
 								    	<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
 								    </div>
@@ -121,38 +118,99 @@
 		    </div>
 		    <nav class="menu_nav">
 		    	<ul class="menu_mm">
-				    <li class="menu_mm"><a href="index.html">Home</a></li>
-				    <li class="menu_mm"><a href="MyClass.html">My classes</a></li>
-			     	<li class="menu_mm"><a href="contact.html">Contact</a></li>
+				    <li class="menu_mm"><a href="#">Home</a></li>
+				    <li class="menu_mm"><a href="#">My classes</a></li>
+			     	<li class="menu_mm"><a href="#">Contact</a></li>
 			    </ul>
 		    </nav>
 	    </div>   
-    </div>   
+    </div>    
 
     <div class="courses">
-         <!--Background-->
-        <div class="section_background parallax-window" data-parallax="scroll" data-image-src="images/courses_background.jpg" data-speed="0.8"></div>    
+        <!--Background-->
+        <div class="section_background parallax-window" data-parallax="scroll" data-image-src="images/courses_background.jpg" data-speed="0.8"></div>
         <div class="topic-of-page">
-            <h3 class="h">CLass Detail</h3>
+            <h3 class="h">Edit lesson</h3>
         </div>
-         <div class="text-center">
-             <h1>Name of class</h1></a>
-             <p>This is the section for desciption</p>   
-         </div>
-         <div class="teacher-subject text-lg-right">
-             <h4>Teacher:<a style="font-size: 18px;" href="#" > Name of the teacher</a></h4>
-             <h4>Subject:<a style="font-size: 18px;" href="#" > Name of the subject</a></h4>
-         </div>
-         <!--join button-->
-         <div class="text-center">
-             <a href="#" class="a-join-button">
-                 <button class="join-button" onclick="window.location.href='Class(student).html'">
-                     <b>Join class</b>
-                 </button>
-             </a>
-         </div>
+
+        <!--Form add class-->
+        <form class="login100-form validate-form edit-form">
+            <span class="login100-form-title p-b-43">
+                <div class="text-center">
+                    <h1>Editing lesson form</h1>
+                    <p>This is the section editings that you want to change</p>   
+                </div>
+            </span>
+            
+            
+            <div class="wrap-input100 validate-input" data-validate = "Name of class is required">
+                <input class="input100" type="text" name="name">
+                <span class="focus-input100"></span>
+                <span class="label-input100">Title</span>
+            </div>
+            
+            <div class="wrap-input100 validate-input" data-validate = "Description is required">
+                <input class="input100" type="text" name="text">
+                <span class="focus-input100"></span>
+                <span class="label-input100">Description</span>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="a-join-button">
+                    <button class="join-button join-button-edit">
+                        <b>Upload video</b>
+                    </button>
+                </a>
+            </div>
+
+            <h3 class="text-center" style="margin-bottom: 20px; margin-top: 50px;">Question?</h3>
+            
+            <div class="text-center edit-question-form">
+                <a href="#" class="a-join-button" style="width: 79%;">
+                    <button class="join-button join-button-edit">
+                        <b>Question 1</b>
+                    </button>
+                </a>
+                <a href="#" class="a-join-button">
+                    <button class="join-button join-button-edit effect-delete">
+                        <b>Delete</b>
+                    </button>
+                </a>
+            </div>
+
+            <div class="text-center edit-question-form">
+                <a href="#" class="a-join-button" style="width: 79%;">
+                    <button class="join-button join-button-edit">
+                        <b>Question 2</b>
+                    </button>
+                </a>
+                <a href="#" class="a-join-button">
+                    <button class="join-button join-button-edit effect-delete">
+                        <b>Delete</b>
+                    </button>
+                </a>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="a-join-button">
+                    <button class="join-button join-button-edit">
+                        <b>Add question</b>
+                    </button>
+                </a>
+            </div>
+            
+        </form>
     </div>
-    
+
+    <!--join button-->
+    <div class="text-center">
+        <a href="#" class="a-join-button">
+            <button class="join-button">
+                <b>Apply</b>
+            </button>
+        </a>
+    </div>
+
 </body>
 
 <div class="newsletter">
@@ -238,11 +296,11 @@
                             <div class="footer_title">Contact Us</div>
                             <div class="footer_links_container">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
                                     <li><a href="#">Features</a></li>
-                                    <li><a href="courses.html">Courses</a></li>
+                                    <li><a href="#">Courses</a></li>
                                     <li><a href="#">Events</a></li>
                                     <li><a href="#">Gallery</a></li>
                                     <li><a href="#">FAQs</a></li>
@@ -300,9 +358,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-
 <script src="js/custom.js"></script>
+
 <script src="js/main.js"></script>
-<script src="js/main.min.js"></script>
-<script src="js/scripts.min.js"></script>
 </html>
