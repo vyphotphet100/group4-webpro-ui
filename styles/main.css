@@ -18,6 +18,11 @@
     height: 65px !important;
 }
 
+.role-text{
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+
 /*index*/
 .fa-user-circle-o{
     font-size: 30px !important;
