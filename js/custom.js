@@ -371,34 +371,28 @@ $(document).ready(function()
 /********************************
  Start Add lesstion teacher
  *********************************/
- (function($){
-    const fileUploader = document.getElementById('file-uploader');
-    const feedback = document.getElementById('feedback');
-    const progress = document.getElementById('progress');
+ (function($) {
+ 	var modal = document.getElementById('id01');
+
     
-    const reader = new FileReader();
-    
-    fileUploader.addEventListener('change', (event) => {
-    const files = event.target.files;
-    const file = files[0];
-    reader.readAsDataURL(file);
-    console.log('files', files);
-    
-    reader.addEventListener('progress', (event) => {
-        if (event.loaded && event.total) {
-        const percent = (event.loaded / event.total) * 100;
-        progress.value = percent;
-        document.getElementById('progress-label').innerHTML = Math.round(percent) + '%';
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
         
-        if (percent === 100) {
-            let msg = `<span style="color:#14BDEE;"> <u><strong>${files.length}</b></u> File has been uploaded successfully.</span>`;
-            feedback.innerHTML = msg;
-        }
-        }
-    });
-    });
+      }
+    }
+      function test(){
+        alert('Link uploaded!');
+        // window.open('', '_self', ''); window.close();
+        let msg = `<span style="color:#14BDEE;" >  You want to do it again?</span>`;
+            feedback2.innerHTML = msg;
+      }
+      
 })(jQuery);
 /********************************
  End Add lesstion teacher
  *********************************/
+
+    
 
